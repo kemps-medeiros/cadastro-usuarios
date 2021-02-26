@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#listUsers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 100px 0;
+  z-index: 5;
+}
+
+.container__list {
+  width: 60%;
+}
+
+.container h1 {
+  margin-top: 20px;
+}
+
+.users__list td {
+  width: 200px;
+  height: 10px;
+}
+
+.input_search {
+  width: 300px;
+  cursor: text;
+}
+
+.table__users {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

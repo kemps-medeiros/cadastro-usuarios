@@ -1,0 +1,102 @@
+{
+  "administradores": [
+    {
+      "username": "kemps@gmail.com",
+      "password": "123456",
+      "id": 7
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "kemps",
+      "cpf": "123456789",
+      "email": "kemps@email.com",
+      "endereço": {
+        "cep": 13454000,
+        "rua": "rua talvez",
+        "numero": 785,
+        "bairro": "bairro azul",
+        "cidade": "cidade eterna"
+      },
+      "id": 1
+    },
+    {
+      "nome": "Amelia da Silva",
+      "cpf": "12378945688",
+      "email": "amelia@email.com",
+      "endereço": {
+        "cep": 13200000,
+        "rua": "rua qualquer",
+        "numero": 785,
+        "bairro": "bairro longe",
+        "cidade": "cidade Maispóxima"
+      },
+      "id": 2
+    },
+    {
+      "nome": "José Carneiro",
+      "cpf": "45678955445",
+      "email": "carneiro@email.com",
+      "endereço": {
+        "cep": 13144858,
+        "rua": "rua hortencia",
+        "numero": 4567,
+        "bairro": "bairro dos Pires",
+        "cidade": "cidade Tá chegando"
+      },
+      "id": 3
+    },
+    {
+      "nome": "Marta Silva",
+      "cpf": "45678958512",
+      "email": "atleta@email.com",
+      "endereço": {
+        "cep": 45123654,
+        "rua": "rua lisboa",
+        "numero": 4588,
+        "bairro": "bairro do morumbi",
+        "cidade": "Rio de Janeiro"
+      },
+      "id": 4
+    },
+    {
+      "nome": "Claudio Gonzaga",
+      "cpf": "33344455588",
+      "email": "cantor@email.com",
+      "endereço": {
+        "cep": 13458854,
+        "rua": "rua dos bares",
+        "numero": 698,
+        "bairro": "bairro do alcool",
+        "cidade": "Pirassununga"
+      },
+      "id": 5
+    },
+    {
+      "nome": "Testannnnndo",
+      "cpf": "4846465454",
+      "email": "teste@teste.com",
+      "endereço": {
+        "cep": "01001000",
+        "rua": "Praça da Sé",
+        "numero": 456,
+        "bairro": "Sé",
+        "cidade": "São Paulo"
+      },
+      "id": 6
+    },
+    {
+      "nome": "Clemente",
+      "cpf": "154648516848",
+      "email": "clementee@tino.com",
+      "endereço": {
+        "cep": "01001000",
+        "rua": "Praça da Sé",
+        "numero": 45,
+        "bairro": "Sé",
+        "cidade": "São Paulo"
+      },
+      "id": 7
+    }
+  ]
+}

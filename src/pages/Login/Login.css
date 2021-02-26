@@ -8,10 +8,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* .container {
+.container {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
@@ -19,6 +20,7 @@ body {
 .col-4 {
   display: flex;
   width: 33.33333333333333%;
+  height: 100vh;
 }
 
 .center {
@@ -90,4 +92,19 @@ body {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 6px;
-} */
+}
+
+.formik__login {
+  display: flex;
+  flex-direction: column;
+}
+
+.formik__register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__register__fields {
+  display: flex;
+  flex-direction: column;
+}
