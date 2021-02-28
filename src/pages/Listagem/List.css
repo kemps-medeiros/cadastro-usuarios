@@ -41,3 +41,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.delete__icon {
+  cursor: pointer;
+}
+
+.edit__icon {
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#modalUser {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.container__modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__modal h1 {
+  margin-top: 20px;
+}
+
+.form__modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__formik__modal {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  text-align: left;
+}
+
+.form__field__modal {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.form__field__modal input {
+  width: 100%;
+}
