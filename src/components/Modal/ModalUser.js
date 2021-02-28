@@ -13,15 +13,14 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '30%',
+    width: '60%',
   },
 };
 
 Modal.setAppElement('#root');
 
-const ModalUser = ({ onClose, selectedUser, refresh }) => {
+const ModalUser = ({ onClose, selectedUser }) => {
   const [editUser, setEditUser] = useState(selectedUser);
-  // const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     console.log(editUser);
@@ -85,16 +84,17 @@ const ModalUser = ({ onClose, selectedUser, refresh }) => {
   return (
     <div>
       <Modal isOpen={true} style={customStyles} onRequestClose={closeModal}>
-        <div>
+        <div className="btn__modal">
           <button className="btn__x" onClick={closeModal}>
             X
           </button>
         </div>
         <div id="modalUser">
-          <div className="container__modal">
+          <div>
             <h1>Alterar Dados</h1>
             <div className="form__modal">
               <Formik
+                className="formik"
                 validationSchema={schema}
                 onSubmit={onSubmit}
                 initialValues={{
@@ -115,7 +115,7 @@ const ModalUser = ({ onClose, selectedUser, refresh }) => {
                   isValid,
                   setFieldValue,
                 }) => (
-                  <Form className="form__formik__modal">
+                  <Form className="form__modal">
                     <div className="form__field__modal">
                       <label>Nome</label>
                       <Field name="name" type="text" />
@@ -135,7 +135,12 @@ const ModalUser = ({ onClose, selectedUser, refresh }) => {
                       <h3>Endereço</h3>
                     </div>
                     <div className="form__field__modal">
-                      <label>CEP</label>
+                      <div className="cep__search">
+                        <label>CEP</label>
+                        <div className="div__search">
+                          <button className="search">Buscar CEP: </button>
+                        </div>
+                      </div>
                       <Field
                         name="cep"
                         type="text"
@@ -163,13 +168,15 @@ const ModalUser = ({ onClose, selectedUser, refresh }) => {
                       <Field name="cidade" type="text" />
                       <ErrorMessage name="cidade" />
                     </div>
-                    <button
-                      className="btn__edit"
-                      type="submit"
-                      disabled={!isValid}
-                    >
-                      Salvar
-                    </button>
+                    <div className="btn__div">
+                      <button
+                        className="btn__include"
+                        type="submit"
+                        disabled={!isValid}
+                      >
+                        Salvar
+                      </button>
+                    </div>
                   </Form>
                 )}
               />

@@ -30,6 +30,6 @@ Yup.setLocale({
 });
 
 export default Yup.object().shape({
-  emailRegister: Yup.string().email(),
-  passwordRegister: Yup.string().min(4),
+  emailRegister: Yup.string().email().required(),
+  passwordRegister: Yup.string().min(4).required(),
 });

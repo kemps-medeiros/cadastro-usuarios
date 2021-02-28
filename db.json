@@ -9,25 +9,22 @@
       "username": "amanda@teste.com",
       "password": "1234",
       "id": 8
+    },
+    {
+      "username": "",
+      "password": "456456",
+      "id": 9
+    },
+    {
+      "username": "testeum@gmail.com",
+      "password": "1234",
+      "id": 10
     }
   ],
   "usuarios": [
     {
-      "nome": "myBrotha",
-      "cpf": "516161",
-      "email": "mybrig@sjukdhf.con",
-      "endereço": {
-        "cep": 13458854,
-        "rua": "rua dos bares",
-        "numero": 698,
-        "bairro": "bairro do alcool",
-        "cidade": "Pirassununga"
-      },
-      "id": 5
-    },
-    {
-      "nome": "Kemps teste",
-      "cpf": "123456748",
+      "nome": "Capitão América",
+      "cpf": "456123",
       "email": "kk@teste.com",
       "endereço": {
         "cep": "01001000",
@@ -37,6 +34,32 @@
         "cidade": "São Paulo"
       },
       "id": 6
+    },
+    {
+      "nome": "Falcão",
+      "cpf": "151351331",
+      "email": "teste@teste.com",
+      "endereço": {
+        "cep": "13482385",
+        "rua": "Rua Miguel Bortolan",
+        "numero": 45,
+        "bairro": "Jardim Senador Vergueiro",
+        "cidade": "Limeira"
+      },
+      "id": 7
+    },
+    {
+      "nome": "Hulk",
+      "cpf": "4654644646",
+      "email": "hulk@hhulk.com",
+      "endereço": {
+        "cep": "01001000",
+        "rua": "Praça da Sé",
+        "numero": 1000,
+        "bairro": "Sé",
+        "cidade": "São Paulo"
+      },
+      "id": 8
     }
   ]
 }

@@ -98,7 +98,9 @@ const List = () => {
             />
           </div>
           {allUsers.length === 0 && (
-            <span>Carregando dados dos Usuários...</span>
+            <span className="span__text">
+              <h1>Carregando dados dos Usuários...</h1>
+            </span>
           )}
           {allUsers.length > 0 && (
             <div className="table__users">

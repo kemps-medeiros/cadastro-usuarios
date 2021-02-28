@@ -7,7 +7,6 @@ import Axios from 'axios';
 
 const Include = () => {
   function onSubmit(values, actions) {
-    console.log('SUBMIT', values);
     Axios.post('http://localhost:5000/usuarios', {
       nome: values.name,
       cpf: values.cpf,
@@ -24,6 +23,7 @@ const Include = () => {
     });
 
     actions.resetForm();
+    alert('USUÁRIO CADASTRADO COM SUCESSO');
   }
 
   function onBlurCep(ev, setFieldValue) {
@@ -86,7 +86,12 @@ const Include = () => {
                     <h3>Endereço</h3>
                   </div>
                   <div className="form__field">
-                    <label>CEP</label>
+                    <div className="cep__search">
+                      <label>CEP</label>
+                      <div className="div__search">
+                        <button className="search">Buscar CEP: </button>
+                      </div>
+                    </div>
                     <Field
                       name="cep"
                       type="text"
@@ -114,9 +119,15 @@ const Include = () => {
                     <Field name="cidade" type="text" />
                     <ErrorMessage name="cidade" />
                   </div>
-                  <button className="btn" type="submit" disabled={!isValid}>
-                    Cadastrar Novo Usuário
-                  </button>
+                  <div className="btn__div">
+                    <button
+                      className="btn__include"
+                      type="submit"
+                      disabled={!isValid}
+                    >
+                      Cadastrar Novo Usuário
+                    </button>
+                  </div>
                 </Form>
               )}
             />

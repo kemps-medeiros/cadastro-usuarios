@@ -13,9 +13,9 @@ body {
   height: 100px;
   position: fixed;
   top: 0;
-  background-color: #000;
+  background-color: #e3773f;
   z-index: 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 2px solid #fff;
 }
 
 .container {
@@ -62,12 +62,13 @@ body {
 
 .navbar__right li a:hover,
 .navbar__right li a:focus {
-  color: #03a4ff;
+  color: #e3773f;
+  background-color: #fff;
 }
 
 .logo {
-  background: #03a4ff;
-  color: #fff;
+  background: #fff;
+  color: #e3773f;
   border-radius: 5px;
   padding: 5px 8px;
   font-weight: 700;
@@ -84,4 +85,57 @@ body {
   height: 25px;
   width: 25px;
   display: none;
+}
+
+@media (max-width: 765px) {
+  .toglle {
+    color: #fff;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+  }
+
+  .navbar__right {
+    display: flex;
+    list-style-type: none;
+    display: none;
+  }
+
+  .common {
+    width: 100%;
+  }
+
+  #hidden .navbar__right {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #hidden .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14pkx;
+  }
+
+  .kemps__logo {
+    display: none;
+  }
+
+  .info__contacts .row .col-6 {
+    display: flex;
+    align-items: center;
+  }
+
+  .info__contacts p {
+    margin-left: 5px;
+  }
+
+  .logo {
+    display: none;
+  }
 }

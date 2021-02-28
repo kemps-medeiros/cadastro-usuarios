@@ -23,7 +23,7 @@ const Nav = () => {
                 className="toglle"
                 onClick={() => setShowLinks(!showLinks)}
               />
-              <div className="logo">Cadastro dos Campeões</div>
+              <div className="logo">CADASTRO - VINGADORES</div>
             </div>
           </ul>
 
@@ -41,7 +41,7 @@ const Nav = () => {
               </li>
               <li>
                 <a href="#" onClick={logout}>
-                  LogOUT
+                  Logout
                 </a>
               </li>
             </ul>

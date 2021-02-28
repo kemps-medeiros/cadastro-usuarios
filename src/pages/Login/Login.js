@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import Axios from 'axios';
 import StoreContext from '../../components/Store/Context';
@@ -9,12 +9,6 @@ import schemaLogin from '../../schemaLogin';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
 const Login = () => {
-  // const [usernameReg, setUsernameReg] = useState('');
-  // const [passwordReg, setPasswordReg] = useState('');
-
-  // const [username, setUsername] = useState('');
-  // const [password, setPassword] = useState('');
-
   const { setToken } = useContext(StoreContext);
   const history = useHistory();
 
@@ -24,6 +18,7 @@ const Login = () => {
       password: values.passwordRegister,
     }).then((response) => {
       console.log(response);
+      alert('Usuário Cadastrado com Sucesso');
     });
     actions.resetForm();
   }
@@ -33,12 +28,12 @@ const Login = () => {
       username: values.emaillogin,
       password: values.password,
     }).then((response) => {
-      console.log(response.data);
       let admins = response.data;
       let adminLocalizated = admins.filter(
         (admin) => admin.username === values.emaillogin
       );
       if (adminLocalizated.length === 0) {
+        alert('Usuário ou senha incorreta');
         console.log('Usuário não encontrado');
       } else if (adminLocalizated.length > 0) {
         if (
@@ -46,8 +41,10 @@ const Login = () => {
           adminLocalizated[0].password === values.password
         ) {
           setToken('1234');
-          console.log('admin Encontrado');
+          // console.log('admin Encontrado');
           history.push('/list');
+        } else {
+          alert('Usuário ou senha incorreta');
         }
       }
       Array.from(document.querySelectorAll('input')).forEach(
@@ -57,9 +54,11 @@ const Login = () => {
   }
 
   return (
-    <div className="container">
+    <div className="loginAndRegister">
       <div className="col-4 center">
         <div className="login__area">
+          <h1>VINGADORES</h1>
+          <h2>CADASTRO DE USUÁRIOS</h2>
           <div className="login">
             <h3>Login</h3>
             <Formik
@@ -72,14 +71,16 @@ const Login = () => {
               render={({ values, errors, touched, isValid, setFieldValue }) => (
                 <Form className="formik__login">
                   <label>Email</label>
-                  <Field type="email" name="emaillogin" />
+                  <Field type="email" autoFocus={true} name="emaillogin" />
                   <ErrorMessage name="emaillogin" />
                   <label>Senha</label>
                   <Field type="password" name="password" />
-                  <button className="btn__enter" type="submit">
-                    {' '}
-                    Entrar{' '}
-                  </button>
+                  <div className="btn">
+                    <button className="btn__enter" type="submit">
+                      {' '}
+                      Entrar{' '}
+                    </button>
+                  </div>
                 </Form>
               )}
             />
@@ -105,9 +106,11 @@ const Login = () => {
                     <Field type="password" name="passwordRegister" />
                     <ErrorMessage name="passwordRegister" />
                   </div>
-                  <button className="btn__register" type="submit">
-                    Registrar
-                  </button>
+                  <div className="btn">
+                    <button className="btn__register" type="submit">
+                      Registrar
+                    </button>
+                  </div>
                 </Form>
               )}
             />

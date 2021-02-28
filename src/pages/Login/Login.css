@@ -8,7 +8,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.loginAndRegister {
+  background-color: #e3773f;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -39,6 +40,10 @@ body {
   align-items: center;
 }
 
+.login__area h2 {
+  color: #fff;
+}
+
 .registration {
   margin-top: 20px;
   width: 300px;
@@ -47,9 +52,10 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 1px solid lightgray;
+  border: 2px solid #000;
   border-radius: 7px;
   padding: 20px;
+  background-color: #fff;
 }
 
 .registration input {
@@ -74,9 +80,16 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 1px solid lightgray;
+  border: 2px solid #000;
   border-radius: 7px;
   padding: 20px;
+  background-color: #fff;
+}
+
+.login__area h1 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .login input {
@@ -92,6 +105,17 @@ body {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 6px;
+}
+
+.btn button {
+  background-color: #e77339;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px;
+}
+
+.btn button:hover {
+  background-color: #ee9468;
 }
 
 .formik__login {

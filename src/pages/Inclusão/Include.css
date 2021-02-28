@@ -21,10 +21,11 @@ body {
 }
 
 .container__include h1 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -39,7 +40,79 @@ body {
   text-align: left;
 }
 
+.form__field input {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.cep__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cep__search__div {
+  display: flex;
+  flex-direction: row;
+}
+
+.cep__search__div p {
+  margin-right: 15px;
+}
+
+.div__search {
+  cursor: pointer;
+  color: #e3773f;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.search {
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+.div__search :hover {
+  color: #fff;
+  background-color: #e3773f;
+}
+
 .form__field {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.endereco__text {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.btn__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn__include {
+  margin-top: 15px;
+  width: 200px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn__include :hover {
+  color: #fff;
+  background-color: #e3773f;
+}
+
+@media (max-width: 765px) {
+  .form__formik {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 }
