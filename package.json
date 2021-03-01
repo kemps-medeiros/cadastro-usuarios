@@ -1,6 +1,5 @@
 {
   "name": "cadastro-usuarios",
-  "homepage": "https://kemps-medeiros.github.io/cadastro-usuarios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

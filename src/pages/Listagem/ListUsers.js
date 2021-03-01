@@ -1,5 +1,4 @@
 import React, { useEffect, useContext, useState } from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import StoreContext from '../../components/Store/Context';
 import Nav from '../../components/Navbar/Nav';
 import './List.css';
