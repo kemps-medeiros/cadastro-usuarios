@@ -1,5 +1,6 @@
 {
   "name": "cadastro-usuarios",
+  "homepage": "https://kemps-medeiros.github.io/cadastro-usuarios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "formik": "^2.2.6",
     "gh-pages": "^3.1.0",
     "history": "^4.10.1",
@@ -25,7 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npx json-server --watch db.json --delay 2000 --port=5000"
+    "server": "npx json-server --watch db.json --delay 2000 --port=5000",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
